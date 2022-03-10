@@ -7,12 +7,23 @@ export const Container = styled.nav`
   padding: 15px;
   position: fixed;
   align-items: center;
-  
+
+  a {
+    padding: 0 16px;
+    font-size: 18px;
+  }
+
   &.fixed {
     position: fixed;
-   
+
     img {
       filter: brightness(0) invert(1);
     }
   }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 16px;
 `;

@@ -12,6 +12,9 @@ export const Container = styled.main`
 export const Content = styled.section`
   height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.65) 0%,

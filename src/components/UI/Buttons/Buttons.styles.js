@@ -23,3 +23,40 @@ export const SecondaryButton = styled.button`
   background: rgb(255, 255, 255);
   font-weight: bold;
 `;
+
+export const CloseButton = styled.button`
+  border: 3px solid rgb(212, 216, 222);
+  width: 30px;
+  height: 30px;
+  border-radius: 80px;
+  cursor: pointer;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:before ,
+  &:after {
+    content: "";
+    width: 18px;
+    height: 4px;
+    border-radius: 16px;
+    position: absolute;
+    background: rgb(212, 216, 222);
+  }
+
+  &:before {
+    transform: rotate(46deg);
+  }
+
+  &:after {
+    transform: rotate(-46deg);
+  }
+`
+
+
+export const Button = styled.button`
+  background: 0;
+  font-size: 16px;
+  cursor: pointer;
+`
