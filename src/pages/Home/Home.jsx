@@ -10,7 +10,7 @@ export const Home = () => {
 
   return (
     <Container>
-      {showModal && <AuthModal showModal={showModal} setShowModal />}
+      {showModal && <AuthModal showModal={showModal} setShowModal={setShowModal} />}
       <Nav className="fixed" />
       <Content>
         <Button variant="primary-button" onClick={() => setShowModal(true)}>

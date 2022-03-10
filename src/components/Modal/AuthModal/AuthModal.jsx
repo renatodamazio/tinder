@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import Button from "../../UI/Buttons/Buttons";
 import { Background, Content, Wrapper, Header } from "./AuthModal.styles";
@@ -13,10 +14,6 @@ export const AuthModal = ({ setShowModal }) => {
       </Content>
     </Background>
   );
-};
-
-AuthModal.propTypes = {
-  setShowModal: {},
 };
 
 export default AuthModal;

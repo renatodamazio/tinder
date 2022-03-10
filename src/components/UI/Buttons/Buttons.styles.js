@@ -25,7 +25,7 @@ export const SecondaryButton = styled.button`
 `;
 
 export const CloseButton = styled.button`
-  border: 3px solid rgb(212, 216, 222);
+  border: 3px solid rgb(0, 0, 0);
   width: 30px;
   height: 30px;
   border-radius: 80px;
@@ -34,15 +34,17 @@ export const CloseButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.3;
+  transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
-  &:before ,
+  &:before,
   &:after {
     content: "";
     width: 18px;
     height: 4px;
     border-radius: 16px;
     position: absolute;
-    background: rgb(212, 216, 222);
+    background: rgb(0, 0, 0);
   }
 
   &:before {
@@ -52,11 +54,16 @@ export const CloseButton = styled.button`
   &:after {
     transform: rotate(-46deg);
   }
-`
 
+  &:hover {
+    color: #000;
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+`;
 
 export const Button = styled.button`
   background: 0;
   font-size: 16px;
   cursor: pointer;
-`
+`;

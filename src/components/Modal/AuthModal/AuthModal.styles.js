@@ -28,7 +28,9 @@ export const Content = styled.main`
 export const Header = styled.header`
   width: 100%;
   height: 20px;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
 `;
 
 export const Wrapper = styled.section`
