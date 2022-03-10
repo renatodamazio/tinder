@@ -34,5 +34,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-plugin-react": "^7.29.3"
+  },
+  "main": "index.js",
+  "repository": "git@github.com:renatodamazio/tinder.git",
+  "author": "Renato <renatopdamazio@gmail.com>",
+  "license": "MIT"
 }
