@@ -1,6 +1,12 @@
 import React from "react";
 
-import { PrimaryButton, SecondaryButton, Button, CloseButton } from "./Buttons.styles";
+import {
+  PrimaryButton,
+  SecondaryButton,
+  Button,
+  CloseButton,
+  TertiaryButton,
+} from "./Buttons.styles";
 
 export const Buttons = (props) => {
   switch (props.variant) {
@@ -10,6 +16,8 @@ export const Buttons = (props) => {
       return <SecondaryButton {...props}>{props.children}</SecondaryButton>;
     case "close-button":
       return <CloseButton {...props}>{props.children}</CloseButton>;
+    case "tertiary-button":
+      return <TertiaryButton {...props}>{props.children}</TertiaryButton>;
     default:
       return <Button {...props}>{props.children}</Button>;
   }

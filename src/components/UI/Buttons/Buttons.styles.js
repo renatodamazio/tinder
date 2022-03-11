@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const PrimaryButton = styled.button`
   color: #fff;
-  text-transform: uppercase;
-  font-size: 15px;
+  font-size: 0.9vw;
+  font-weight: 800;
+  min-height: 55px;
   cursor: pointer;
-  padding: 10px 30px;
+  padding: 15px 30px;
   border-radius: 30px;
   background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64));
 
@@ -22,6 +23,23 @@ export const SecondaryButton = styled.button`
   border-radius: 4px;
   background: rgb(255, 255, 255);
   font-weight: bold;
+`;
+
+export const TertiaryButton = styled.button`
+  cursor: pointer;
+  border-radius: 30px;
+  border: 2px solid #505965;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 54px;
+  background: transparent;
+
+  b {
+    text-align: center;
+    width: 100%;
+  }
 `;
 
 export const CloseButton = styled.button`

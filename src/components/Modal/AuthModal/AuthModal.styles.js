@@ -34,7 +34,10 @@ export const Header = styled.header`
 `;
 
 export const Wrapper = styled.section`
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-`
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
