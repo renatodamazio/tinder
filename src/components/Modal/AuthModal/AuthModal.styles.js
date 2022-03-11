@@ -41,3 +41,16 @@ export const Wrapper = styled.section`
   flex-direction: column;
   align-items: center;
 `;
+
+export const Footer = styled.footer`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  text-align: center;
+
+  img {
+    max-width: 200px;
+  }
+`

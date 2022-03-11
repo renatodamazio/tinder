@@ -2,7 +2,13 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import Button from "../../UI/Buttons/Buttons";
-import { Background, Content, Wrapper, Header } from "./AuthModal.styles";
+import {
+  Background,
+  Content,
+  Wrapper,
+  Header,
+  Footer,
+} from "./AuthModal.styles";
 import Title, { Paragraphy } from "../../Text/Title";
 import List from "../../UI/List/List";
 import Image from "../../UI/Images/Image";
@@ -26,10 +32,11 @@ export const AuthModal = ({ setShowModal }) => {
             CREATE ACCOUNT
           </Title>
 
-          <Paragraphy>
+          <Paragraphy style={{ marginBottom: 20 }}>
             By clicking Log In, you are agree to our terms. Learn how we process
             your data in or Privace Policy and Cookie Policy.
           </Paragraphy>
+
           <List
             key="items"
             items={[
@@ -59,6 +66,13 @@ export const AuthModal = ({ setShowModal }) => {
               </Button>,
             ]}
           />
+
+          <Footer>
+            <Title variant="h3">
+              <i>GET THE APP</i>
+            </Title>
+            <Image src="/images/logos/5db7c8d7aee1fc899553481b95cddeb3.webp" />
+          </Footer>
         </Wrapper>
       </Content>
     </Background>
