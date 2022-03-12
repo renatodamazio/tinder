@@ -28,18 +28,28 @@ export const Textarea = ({ label, htmlFor, ...props }) => {
   );
 };
 
-export const Radio = ({ label, htmlFor, ...props }) => {
+export const Radio = ({ label, htmlFor, checked, value, ...props }) => {
   return (
     <RadioStyle>
       <Label htmlFor={htmlFor}>{label}</Label>
-      <input type="radio" {...props} />
+      <input
+        type="radio"
+        {...props}
+        value={value}
+        defaultChecked={checked === value}
+      />
     </RadioStyle>
   );
 };
 
 export const RadioGroup = (props) => {
   return props.children.map((item, index) => (
-    <Radio key={index} name={props.name} {...item.props} />
+    <Radio
+      key={index}
+      name={props.name}
+      checked={props.checked}
+      {...item.props}
+    />
   ));
 };
 

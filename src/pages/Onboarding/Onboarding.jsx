@@ -73,7 +73,7 @@ export const Onboarding = () => {
             />
 
             <Grid>
-              <RadioGroup name="gender">
+              <RadioGroup name="gender_identity" checked="male">
                 <Radio
                   value={"male"}
                   htmlFor="gender_male"
