@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { render } from "@testing-library/react";
-import React, { Component } from "react";
+import React from "react";
+import { Grid } from "../Grid/Grid";
 import {
   Input,
   Label,
@@ -31,26 +31,33 @@ export const Textarea = ({ label, htmlFor, ...props }) => {
 export const Radio = ({ label, htmlFor, checked, value, ...props }) => {
   return (
     <RadioStyle>
-      <Label htmlFor={htmlFor}>{label}</Label>
       <input
         type="radio"
         {...props}
         value={value}
         defaultChecked={checked === value}
       />
+      <Label htmlFor={htmlFor}>{label}</Label>
     </RadioStyle>
   );
 };
 
 export const RadioGroup = (props) => {
-  return props.children.map((item, index) => (
-    <Radio
-      key={index}
-      name={props.name}
-      checked={props.checked}
-      {...item.props}
-    />
-  ));
+  return (
+    <Grid rows={1}>
+      <Label>{props.label}</Label>
+      <Grid cols={props.cols} gap="16px">
+        {props.children.map((item, index) => (
+          <Radio
+            key={index}
+            name={props.name}
+            checked={props.checked}
+            {...item.props}
+          />
+        ))}
+      </Grid>
+    </Grid>
+  );
 };
 
 export default InputComponent;

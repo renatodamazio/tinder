@@ -81,7 +81,13 @@ export const CloseButton = styled.button`
 `;
 
 export const Button = styled.button`
-  background: 0;
+  background: rgba(144, 144, 144, 0.2);
+  border: 2px solid rgb(144, 144, 144, 0.3);
   font-size: 16px;
   cursor: pointer;
+  font-weight: 800;
+  min-height: 55px;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 15px;
 `;
