@@ -33,6 +33,7 @@ export const TextareaStyle = styled.textarea`
   padding: 16px;
   font-size: 16px;
   border: 2px solid rgb(144, 144, 144);
+  font-family: "Readex Pro", sans-serif;
   border-radius: 10px;
 `;
 
